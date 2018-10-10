@@ -13,15 +13,15 @@ var appData = {
 console.log('Наш бюджет: ' + appData['money']);
 console.log('Дата: ' + appData['time']);
 
-let expenses = {};
-		expenses.question ={};
+	appData.expenses = {};
+
 		a1 = prompt("Введите обязательную статью расходов в этом месяце");
 		a2 = prompt("Во сколько обойдется?");
 		a3 = prompt("Введите обязательную статью расходов в этом месяце");
 		a4 = prompt("Во сколько обойдется?");
-		expenses.question[a1] = a2;
-		expenses.question[a3] = a4;
+		appData.expenses[a1] = a2;
+		appData.expenses[a3] = a4;
 
-console.log(expenses);
+console.log(appData.expenses);
 
 console.log('Бюджет за 1 день: '+Math.floor(money/30));
